@@ -1,0 +1,461 @@
+/* to do:
+- wireframe
+- mockup
+- check for validity errors LAST MINUTE
+*/
+
+/* colours used:
+grey/blue - #778899 - "lightslategrey" - rgb 119 136 153
+light blue - #f0f8ff - "aliceblue" - rgb 240 248 255
+bright blue - #4681b3 - "steelblue" - rgb 70 129 179
+bright green - #00ff00 - "lime" - rgb 0 255 0
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+* {
+    font-family: 'Droid Sans', 'Arial', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+body {
+    background-color: black;
+}
+
+/* header */
+.masthead {
+    background-color: #4681b3;
+    background-image: url("../img/banner-short-faded.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto 10px auto;
+    height: 100px;
+    clear: both;
+    text-align: center;
+}
+h3 {
+    color: #f0f8ff;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    padding-top: 40px;
+    text-transform: uppercase;
+    /*font-family: 'Stardos Stencil', 'Times', serif;*/
+    font-family: 'Special Elite', 'Times', cursive;
+}
+header {
+    background-color: black;
+}
+header img {
+    display: block;
+    text-align: center;
+    padding: 20px 10px 0 10px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 450px;
+}
+header nav {
+    width: 97%;
+    display: inline-block;
+    margin: 10px auto 0 auto;
+    clear: both; 
+}
+header nav ul {
+    text-align: center;
+}
+header nav ul li {
+    background-color: #778899;
+    list-style: none;
+    height: 30px;
+    margin: 10px 0; 
+    padding: 14px 0 3px 0;
+    text-align: center;
+}
+header nav ul li:hover {
+    opacity: .6;
+}
+header nav ul li a { 
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    padding: 10px 135px 12px 135px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Special Elite', 'Times', cursive;
+}
+
+/* main section */
+main {
+    background-color: #f0f8ff;
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+}
+.article div p {
+    padding: 0;
+    margin: 15px auto;
+    font-size: .618rem;
+    line-height: 1.44;
+    width: 100%;
+    text-align: left;
+}
+figure {
+    padding: 0;
+    margin: 0;
+}
+figure div img {
+    max-width: 100%;
+    width: 100%;
+    width: 0 auto;
+    text-align: center;
+    margin: 15px auto 3px auto;
+}  
+.box::after {
+    content: "";
+    display: block;
+    clear: both;
+} 
+.box {
+    padding: 0;
+    width: 95%;
+    /*max-width: 650px; */
+    margin: 10px auto;
+}
+.extra {
+    padding: 0;
+    margin: 0 auto; 
+}
+.box h1 {
+    font-family: 'Special Elite', 'Times', cursive;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+    margin: 30px auto 0 auto;
+    width: 80%;
+    clear: both;
+    color: #4681b3;
+}
+.details {
+    width: 80%;
+    margin: 0 auto 35px auto;
+    clear: both;
+    font-size: .618rem;
+    line-height: 1.5;
+    color: grey;
+}
+
+/* contact */
+form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+#name, #email, #subject, #message {
+    text-align: left;
+    padding: 0 0 0 7px;
+}
+#message {
+    padding-top: 10px;
+}
+div#contact.box {
+    max-width: 100%;
+}
+input, textarea {
+    height: 35px;
+    width: 94%;
+    margin: 0;
+    padding: 0;
+    border: 1px solid lightgrey;
+}
+[type="submit"] {
+    padding: 10px 0 27px 0 !important; 
+    color: #00ff00;
+    background-color: #4681b3;
+    width: 97%;
+    border: 0;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+[type="submit"]:hover {
+    background-color: black;
+    color: #f0f8ff;
+}
+.form-box {
+    color: black;
+    margin: 15px 0; 
+}
+.contact h1 {
+    color: #4681b3;
+}
+#contact {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+/* footer */
+footer {
+    height: 120px;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+}
+footer p {
+    color: lightslategrey;
+    font-size: .7rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding: 22px 0;
+}
+footer a {
+    color: lightslategrey;
+    font-size: .7rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+}
+footer a:hover {
+    color: lightgrey;
+}
+footer ul {
+    margin: 0 auto 5px auto;
+    text-align: center;
+    padding: 0;
+}
+footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 4px auto 0 auto;
+    padding: 0 9px; 
+}
+footer ul li a {
+    color: grey;
+    font-size: 1.5rem;
+    padding: 0 5px 0 5px;
+    text-align: center;
+}
+footer ul li a:hover {
+    color: white;
+}
+
+
+/* -- MEDIA QUERIES -- */
+@media all and (min-width: 35rem){
+
+    /* header */
+    .masthead {
+        background-image: url("../img/banner-long-faded.png");
+        margin: 0 0 15px 0;
+    }
+    header nav {
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav ul {
+        margin: 5px auto;
+        width: 100%;
+    }
+    header nav ul li {
+        display: inline-block;
+        width: 42%;
+        max-width: 310px;
+    }
+    header nav ul li:first-child {
+        margin-right: 2%;
+    }
+    header nav ul li a { 
+        padding: 10px 33% 12px 33%;
+    }
+    
+    /* main section */
+    main {
+        background-color: aliceblue;
+        margin: 0 auto;
+        padding: 12px;
+        width: 80%;   
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .box, .extra {
+       background-color: aliceblue; 
+    }
+    .article div p {
+        font-size: 1rem;
+        line-height: 1.51;
+    }
+    figure div p {
+        width: 100%;
+    }
+    figure div img {
+        margin: 0 25px 8px 0;
+        text-align: left;
+        width: 40%;
+        float: left;
+        clear: right;
+        max-width: 500px;
+    }
+    .details {
+        margin: 0 25px 8px 0;
+        width: 40%;
+        float: left;
+    }
+    .box h1 {
+        font-size: 1.3rem;
+        width: 80%;
+        clear: both;
+        margin: 20px auto 8px auto;
+    }    
+
+    /* contact */
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+    input {
+        width: 96%;
+        height: 30px;
+        margin: 0;
+    }
+    [type="submit"] {
+        font-size: .8rem;
+        letter-spacing: .05rem;
+    }
+    .filling {
+        display: inline-block;
+        float: left;
+        width: 31.5%;
+        margin: 0 0 0 8px;
+    }
+    .comment {
+        width: 61%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    #message {
+        height: 128px;
+        float: right;
+    }
+    .sending {
+        width: 33%;
+        display: block;
+        margin: 0 0 0 8px;
+        clear: both;
+    }
+    div#contact.box {
+        max-width: 90%;
+    }
+    
+    /* footer */
+    footer {
+        clear: both;
+        width: 77.5%; 
+    }
+    footer ul {
+        margin-left: -15px;
+    }  
+}
+
+
+/* -- MEDIA QUERIES -- */
+@media all and (min-width: 80rem){
+    
+    * {
+        text-align: left;
+    }
+    
+    /* header */
+    header {
+        text-align: left;  
+    }
+    .box {
+        max-width: 80%;
+    }
+    .box h1 {
+        font-size: 1.5rem;
+        margin: 20px 0 8px 0;
+        width: 100%;
+    }
+    header img {
+        display: inline-block;
+        width: 400px;
+        float: left;
+        text-align: left;
+        margin: 0 9% 0 5%;
+    }
+    nav {
+        text-align: left; 
+    }
+    header nav ul {
+        margin: -87px 0 0 50px;
+        float: left;
+    }
+    header nav ul li {
+        width: 170px;
+        margin-left: 2%;
+    }
+    header nav ul li:first-child {
+        margin-right: 2%;
+    }
+    header nav ul li a { 
+        padding: 10px 25% 12px 25%;
+    }
+    h3 {
+        font-size: 2.6rem;
+        margin: 30px 0 8px 20%;
+        width: 40%;
+    }
+    
+    /* main section */
+    .article div p {
+        font-size: 1.618rem;
+        line-height: 1.59;
+    }
+    .content-box{
+        text-align: left;
+    }
+    #column1, #column2 {
+        float: left;
+        max-width: 340px;
+        display: block;
+    }
+    .box {
+        padding: 0 25px;
+        max-width: 750px;
+        margin: 10px auto;
+    }
+    .extra {
+        padding: 0;
+        margin: 0 auto; 
+        max-width: 800px;
+    }
+    div#contact.box {
+        max-width: 75%;
+    }
+    
+    /* contact */
+    [type="submit"] {
+        text-align: center;
+    }
+    .sending {
+        width: 32%;
+    }
+    .filling {
+        width: 31%;
+    }
+        
+    /* footer */
+    footer ul, footer p, footer a {
+        max-width: 66%;
+        text-align: left;
+    }
+    footer {
+        width: 56%;
+        padding: 30px 0 0 0;
+        margin-left: 20.5%;
+    }
+}
